@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 def zipextract(bucketname, zipfilename_with_path):
 
     storage_client = storage.Client()
