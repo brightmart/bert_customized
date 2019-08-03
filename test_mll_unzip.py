@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+from google.cloud import storage
+from zipfile import ZipFile
+from zipfile import is_zipfile
+import io
+
 def zipextract(bucketname, zipfilename_with_path):
 
     storage_client = storage.Client()
@@ -18,5 +23,4 @@ def zipextract(bucketname, zipfilename_with_path):
  
 source_zip_file='gs://bert_base_dir/pretrain_marriage_labor_loan_tfrecord/tf_mll_examples_all_tfrecord.zip'
 target_path='gs://bert_base_dir/pretrain_marriage_labor_loan_tfrecord/fowefkekelg23idsdfksdd_test_zip_dfwe'
-
 zipextract(target_path，source_zip_file)
