@@ -22,5 +22,5 @@ def zipextract(bucketname, zipfilename_with_path):
                 blob.upload_from_string(contentfile)
  
 source_zip_file='gs://bert_base_dir/pretrain_marriage_labor_loan_tfrecord/tf_mll_examples_all_tfrecord.zip'
-target_path='gs://bert_base_dir/pretrain_marriage_labor_loan_tfrecord/fowefkekelg23idsdfksdd_test_zip_dfwe'
+target_path='gs://bert_base_dir'
 zipextract(target_path,source_zip_file)
